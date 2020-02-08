@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+
     <FrameLayout
         android:id="@+id/content"
         android:layout_width="match_parent"
@@ -17,8 +18,9 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigation"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_gravity="bottom"
+        app:itemIconTint="@drawable/bottom_navigation_selector"
         android:background="?android:attr/windowBackground"
         app:menu="@menu/navigation" />
 
