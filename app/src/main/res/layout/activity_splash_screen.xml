@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash3"
+    android:layout_gravity="center_horizontal"
+    tools:context=".SplashScreen">
+
+    <ImageView
+        android:id="@+id/wave"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/titleBox"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#68cce4"
+        android:background="@drawable/wawe" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wave"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:text="Water"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold"
+        android:id="@+id/t1"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/mainBlue"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:text="Reminder"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_toRightOf="@+id/t1"
+        android:id="@+id/t2"
+        android:textColor="@color/orange"/>
+    </RelativeLayout>
+
+</RelativeLayout>

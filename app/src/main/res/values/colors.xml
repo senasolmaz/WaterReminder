@@ -3,6 +3,16 @@
     <color name="colorPrimary">#1899c3</color>
     <color name="colorPrimaryDark">#1899c3</color>
     <color name="colorAccent">#faa023</color>
+    <color name="mainBlue">#1899c3</color>
+    <color name="orange">#faa023</color>
     <color name="white">#ffffff</color>
     <color name="grayBlue">#c9dbdf</color>
+    <color name="grayBlue2">#ACD0D8</color>
+    <color name="blue1">#79adf7</color>
+    <color name="blue2">#9ACFDF</color>
+    <color name="gray">#777575</color>
+    <color name="pink">#CA5D81</color>
+    <color name="mainBlueLight">#A5CFDD</color>
+    <color name="clear">#00FFFFFF</color>
+    <color name="lightgray">#DFDCDC</color>
 </resources>

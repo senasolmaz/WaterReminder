@@ -1,49 +1,211 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:background="@drawable/blue_wave"
-        android:layout_below="@+id/titleBox"
-        android:layout_marginTop="-3dp"
-        android:layout_centerHorizontal="true"
-        />
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fillViewport="true">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:paddingTop="16dp"
-        android:paddingBottom="16dp"
-        android:id="@+id/titleBox">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <TextView
+        <ImageView
+            android:id="@+id/wave"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/titleBox"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-3dp"
+            android:background="@drawable/wawe" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wave"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Ne kadar su içtin?"
+                    android:textColor="@color/gray"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:gravity="end"
+                    android:text="0/3000 ML"
+                    android:textColor="@color/gray"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/seeker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progressDrawable="@drawable/seekbar_style" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/glases_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Drink Reminder"
-            android:textAllCaps="true"
             android:layout_centerHorizontal="true"
-            android:fontFamily="sans-serif-medium"
-            android:textSize="20dp"
-            android:textColor="@color/white"
-            android:id="@+id/titleTxt"/>
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/glases"
+                android:layout_width="150dp"
+                android:layout_height="190dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/glass"
+                android:backgroundTint="@color/grayBlue2" />
+
+            <ImageView
+                android:id="@+id/emoji"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignEnd="@+id/glases"
+                android:layout_alignRight="@+id/glases"
+                android:layout_alignBottom="@+id/glases"
+                android:layout_marginBottom="-15dp"
+                android:background="@drawable/durumsuz"
+                android:backgroundTint="@color/orange" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/drinks"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kahve"
+                android:textColor="@color/gray"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Su"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Çay"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
+                android:textColor="@color/gray" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/drinks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ozet_bilgi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/clear"
+                    android:src="@drawable/coffee" />
+
+                <ImageButton
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/clear"
+                    android:src="@drawable/water" />
+
+                <ImageButton
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/clear"
+                    android:src="@drawable/star" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ozet_bilgi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-light"
+                android:paddingLeft="10dp"
+                android:paddingTop="6dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="6dp"
+                android:text="Bugün 240 / 3000 ml"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+        </RelativeLayout>
 
     </RelativeLayout>
 
-
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="190dp"
-        android:background="@drawable/glass"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="@color/grayBlue"/>
-
-
-</RelativeLayout>
+</androidx.core.widget.NestedScrollView>
