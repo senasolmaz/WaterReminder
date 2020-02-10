@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clipToPadding="false"
+    android:background="@color/white"
     android:fillViewport="true">
 
     <RelativeLayout
@@ -65,6 +66,30 @@
                 android:progressDrawable="@drawable/seekbar_style" />
         </LinearLayout>
 
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_above="@+id/temp"
+            android:layout_marginBottom="83dp"
+            android:id="@+id/fullWater">
+
+        <ImageView
+            android:id="@+id/wave2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#7BCDE9"
+            android:background="@drawable/dalga2" />
+
+            <View
+                android:id="@+id/viewHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:background="@drawable/dalga"/>
+
+        </LinearLayout>
         <RelativeLayout
             android:id="@+id/glases_layout"
             android:layout_width="wrap_content"
@@ -75,8 +100,7 @@
             <ImageView
                 android:id="@+id/glases"
                 android:layout_width="150dp"
-                android:layout_height="190dp"
-                android:layout_gravity="center"
+                android:layout_height="220dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/glass"
                 android:backgroundTint="@color/grayBlue2" />
@@ -85,16 +109,16 @@
                 android:id="@+id/emoji"
                 android:layout_width="45dp"
                 android:layout_height="45dp"
-                android:layout_alignEnd="@+id/glases"
                 android:layout_alignRight="@+id/glases"
-                android:layout_alignBottom="@+id/glases"
-                android:layout_marginBottom="-15dp"
+                android:layout_below="@+id/glases"
                 android:background="@drawable/durumsuz"
+                android:layout_marginTop="-30dp"
                 android:backgroundTint="@color/orange" />
 
         </RelativeLayout>
 
         <LinearLayout
+            android:id="@+id/temp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_above="@+id/drinks"
@@ -136,7 +160,6 @@
                 android:textStyle="bold"
                 android:textColor="@color/gray" />
 
-
         </LinearLayout>
 
         <RelativeLayout
@@ -155,22 +178,22 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:layout_width="65dp"
-                    android:layout_height="65dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/clear"
                     android:src="@drawable/coffee" />
 
                 <ImageButton
-                    android:layout_width="65dp"
-                    android:layout_height="65dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/clear"
                     android:src="@drawable/water" />
 
                 <ImageButton
-                    android:layout_width="65dp"
-                    android:layout_height="65dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/clear"
                     android:src="@drawable/star" />

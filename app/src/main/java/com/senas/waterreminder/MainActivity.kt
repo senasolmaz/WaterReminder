@@ -6,7 +6,7 @@ import android.widget.FrameLayout
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.senas.waterreminder.MainFragments.SettingsFragment
-import com.senas.waterreminder.MainFragments.StatisticFragment
+import com.senas.waterreminder.MainFragments.StaticsFragments
 import com.senas.waterreminder.MainFragments.WaterFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
                 return@OnNavigationItemSelectedListener true
             }
             R.id.statistic -> {
-                val fragment = StatisticFragment()
+                val fragment = StaticsFragments()
                 addFragment(fragment)
                 return@OnNavigationItemSelectedListener true
             }
