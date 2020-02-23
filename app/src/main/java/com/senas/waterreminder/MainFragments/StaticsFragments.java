@@ -41,7 +41,7 @@ public class StaticsFragments extends Fragment {
         xAxis.setValueFormatter(formatter);
         chart.setData(barData);
         chart.setFitBars(true);
-        chart.animateXY(5000, 5000);
+        chart.animateXY(1000, 1000);
         chart.invalidate();
 
         return  view;

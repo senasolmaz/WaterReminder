@@ -5,7 +5,7 @@
         <shape android:shape="rectangle"
             android:tint="@color/mainBlueLight">
             <corners android:radius="8dp"/>
-            <size android:height="4dp" />
+            <size android:height="10dp" />
             <solid android:color="@color/mainBlueLight"/>
         </shape>
     </item>
@@ -19,7 +19,7 @@
                     <shape android:shape="rectangle"
                         android:tint="@color/mainBlue">
                         <corners android:radius="8dp"/>
-                        <size android:height="4dp" />
+                        <size android:height="10dp" />
                         <solid android:color="@color/mainBlue" />
                     </shape>
                 </item>

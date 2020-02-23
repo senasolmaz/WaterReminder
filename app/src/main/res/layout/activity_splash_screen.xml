@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/splash3"
+    android:background="@color/white"
     android:layout_gravity="center_horizontal"
     tools:context=".SplashScreen">
 
@@ -46,5 +46,13 @@
         android:id="@+id/t2"
         android:textColor="@color/orange"/>
     </RelativeLayout>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:background="@drawable/splash3"/>
 
 </RelativeLayout>
