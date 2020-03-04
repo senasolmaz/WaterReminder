@@ -184,7 +184,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:layout_marginRight="25dp"
-                android:background="@drawable/plus"
+                android:background="@drawable/button_click"
                 android:backgroundTint="@color/mainBlueLight"
                 android:scaleType="center" />
 
@@ -195,7 +195,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="25dp"
-                android:background="@drawable/minus"
+                android:background="@drawable/button_click2"
                 android:backgroundTint="@color/mainBlueLight"
                 android:scaleType="center" />
 

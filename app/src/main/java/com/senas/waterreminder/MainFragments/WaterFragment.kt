@@ -96,12 +96,13 @@ class WaterFragment : Fragment() {
             dialog.setCancelable(false)
             dialog.setContentView(R.layout.water_added_popup)
 
-            //    val infoText = dialog .findViewById(R.id.bilgiText) as TextView
+            val infoText = dialog .findViewById(R.id.bilgiText) as TextView
             val okBtn = dialog.findViewById(R.id.okButon) as Button
             okBtn.setOnClickListener {
                 dialog.dismiss()
             }
             dialog.show()
+            infoText.text = icilenToplamMiktar.toString() + "ML iceceğiniz başarıyla eklendi!"
 
             bugunToplam.text = "Bugün " + icilenToplamMiktar.toString() + " / 3000 ML"
 

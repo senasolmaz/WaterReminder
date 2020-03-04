@@ -18,6 +18,7 @@
     <color name="darkBlue">#005c87</color>
     <color name="transparent">#00FFFFFF</color>
     <color name="cyansari">#c3da26</color>
-    <color name="green">#bbcc57</color>
+    <color name="cyangreen">#bbcc57</color>
     <color name="butonblue">#00aed9</color>
+    <color name="transparangray">#9FF4F2F2</color>
 </resources>
